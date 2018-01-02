@@ -27,7 +27,7 @@ public class SimplyGems {
     public static CommonProxy proxy;
 
     public static List<ItemBase> items = new ArrayList<>();
-    public static ItemBase gems = new ItemBase("gems", "cinnabar", "goshenite", "jade", "morganite", "phosphophyllite", "redberyl", "rutile", "bort", "benitoite", "euclase", "neptunite", "yellowdiamond", "zircon1", "zircon2", "zircon3", "zircon4", "obsidian", "amethyst", "alexandrite", "antarcticite", "padparadscha", "cairngorm", "ghostquartz", "watermelontourmaline", "sphene", "hemimorphite", "peridot", "chrysoberyl", "bluezoisite", "lrbopal", "wopal", "bopal", "unakite", "reddiamond", "azurite", "greendiamond");
+    public static ItemBase gems = new ItemBase("gems", "cinnabar", "goshenite", "jade", "morganite", "phosphophyllite", "redberyl", "rutile", "rutile2", "bort", "benitoite", "euclase", "neptunite", "yellowdiamond", "ruby", "zircon1", "zircon2", "zircon3", "zircon4", "obsidian", "amethyst", "alexandrite", "antarcticite", "padparadscha", "cairngorm", "ghostquartz", "watermelontourmaline", "sphene", "hemimorphite", "peridot", "chrysoberyl", "bluezoisite", "lrbopal", "wopal", "bopal", "unakite", "reddiamond", "azurite", "greendiamond", "hornblende");
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
