@@ -2,7 +2,7 @@
 {
   "modid": "simplygems",
   "name": "Simply Gems",
-  "description": "Gems For All Your ModPacking Needs!",
+  "description": "Gems For All Your Modpacking Needs!",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

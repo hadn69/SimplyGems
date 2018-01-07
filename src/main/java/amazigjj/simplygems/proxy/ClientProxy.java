@@ -9,8 +9,8 @@ public class ClientProxy extends CommonProxy {
 
     public void registerItemRenderer(ItemBase item) {
         if(item.getSubNames()!=null) {
-            for (int i = 0; i < item.getSubNames().length; i++) {
-                ModelLoader.setCustomModelResourceLocation(item, i, new ModelResourceLocation(SimplyGems.MOD_ID + ":" + item.getSubNames()[i], "inventory"));
+            for (int i = 0; i < item.getSubNames().size(); i++) {
+                ModelLoader.setCustomModelResourceLocation(item, i, new ModelResourceLocation(SimplyGems.MOD_ID + ":" + item.getSubNames().get(i), "inventory"));
             }
         }
         else {
