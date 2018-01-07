@@ -173,6 +173,7 @@ public class GemConfig {
         public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
             if (event.getModID().equals(SimplyGems.MOD_ID)) {
                 ConfigManager.sync(SimplyGems.MOD_ID, Config.Type.INSTANCE);
+                configLoad();
                 SimplyGems.LOGGER.info("hi");
             }
         }
