@@ -8,11 +8,12 @@ import java.util.List;
 
 public class SubItemBase {
 
-    private final String name;
-    private List<String> oreDict = new ArrayList<>();
-    private int stackSize;
-    private List<String> tooltip = new ArrayList<>();
-    private CreativeTabs creativeTab;
+    protected final String name;
+    protected List<String> oreDict = new ArrayList<>();
+    protected int stackSize;
+    protected List<String> tooltip = new ArrayList<>();
+    protected CreativeTabs creativeTab;
+    protected int metadata;
 
     public SubItemBase(String name){
         this.name = name;
@@ -44,8 +45,13 @@ public class SubItemBase {
     }
 
     public SubItemBase setItem(List<SubItemBase> items){
+        this.metadata=items.size();
         items.add(this);
         return this;
+    }
+
+    public int getMetadata(){
+        return this.metadata;
     }
 
     public SubItemBase setTooltip(String... tooltip){

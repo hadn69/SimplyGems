@@ -48,6 +48,7 @@ public class SimplyGems {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
+        ModBlocks.init();
     }
 
     @SubscribeEvent
