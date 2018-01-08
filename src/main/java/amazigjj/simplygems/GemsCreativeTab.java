@@ -12,6 +12,6 @@ public class GemsCreativeTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(SimplyGems.gems, 1, 4);
+        return new ItemStack(SimplyGems.gems, 1, SimplyGems.phosphophyllite.getMetadata());
     }
 }

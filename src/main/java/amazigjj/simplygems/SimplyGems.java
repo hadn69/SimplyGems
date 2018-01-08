@@ -42,7 +42,7 @@ public class SimplyGems {
     public static SubItemBase jade = new SubItemBase("jade").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase phosphophyllite = new SubItemBase("phosphophyllite").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase rutile = new SubItemBase("rutile").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
-    public static SubItemBase rutile2 = new SubItemBase("rutile").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
+    public static SubItemBase rutile2 = new SubItemBase("rutile2").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase redberyl = new SubItemBase("redberyl").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase morganite = new SubItemBase("morganite").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase benitoite = new SubItemBase("benitoite").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
@@ -52,7 +52,7 @@ public class SimplyGems {
     public static SubItemBase yellowdiamond = new SubItemBase("yellowdiamond").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase reddiamond = new SubItemBase("reddiamond").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase greendiamond = new SubItemBase("greendiamond").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
-    public static SubItemBase zircon1 = new SubItemBase("zircon").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
+    public static SubItemBase zircon1 = new SubItemBase("zircon1").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase zircon2 = new SubItemBase("zircon2").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase zircon3 = new SubItemBase("zircon3").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase zircon4 = new SubItemBase("zircon4").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
