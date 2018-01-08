@@ -40,6 +40,7 @@ public class SimplyGems {
     public static SubItemBase cinnabar = new SubItemBase("cinnabar").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase goshenite = new SubItemBase("goshenite").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase jade = new SubItemBase("jade").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
+    public static SubItemBase phosphophyllite = new SubItemBase("phosphophyllite").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
 
     public static Item gems = new ItemBase("gems", gem);
     //public static ItemBase gems = new ItemBase("gems", "cinnabar", "goshenite", "jade", "morganite", "phosphophyllite", "redberyl", "rutile", "rutile2", "bort", "benitoite", "euclase", "neptunite", "yellowdiamond", "ruby", "zircon1", "zircon2", "zircon3", "zircon4", "obsidian", "amethyst", "alexandrite", "antarcticite", "padparadscha", "cairngorm", "ghostquartz", "watermelontourmaline", "sphene", "hemimorphite", "peridot", "chrysoberyl", "bluezoisite", "lrbopal", "wopal", "bopal", "unakite", "reddiamond", "azurite", "greendiamond", "hornblende");
