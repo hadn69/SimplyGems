@@ -20,7 +20,7 @@ public class ModBlocks {
     static Block OrePhos;
 
     public static void init() {
-        OrePhos = new BlockOre("orephosphophyllite",Material.ROCK, SimplyGems.gems, 1, 3 ).setMetaDrop(SimplyGems.phosphophyllite.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
+        OrePhos = new BlockOre("orephosphophyllite",Material.ROCK, SimplyGems.gems, 1, 2 ).setMetaDrop(SimplyGems.phosphophyllite.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         OrePhos.setHarvestLevel("pickaxe", 1);
     }
 
