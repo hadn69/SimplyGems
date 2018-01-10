@@ -3,7 +3,6 @@ package amazigjj.simplygems.block;
 import amazigjj.simplygems.SimplyGems;
 import amazigjj.simplygems.GemsCreativeTab;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockDirt;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -20,7 +19,7 @@ public class ModBlocks {
     static Block OrePhos;
 
     public static void init() {
-        OrePhos = new BlockOre("orephosphophyllite",Material.ROCK, SimplyGems.gems, 1, 2 ).setMetaDrop(SimplyGems.phosphophyllite.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
+        OrePhos = new BlockOre("orephosphophyllite",Material.ROCK, 1, 2 ).addItemDrop(SimplyGems.gems, SimplyGems.phosphophyllite.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         OrePhos.setHarvestLevel("pickaxe", 1);
     }
 

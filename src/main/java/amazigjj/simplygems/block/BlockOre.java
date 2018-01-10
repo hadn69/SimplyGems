@@ -1,56 +1,46 @@
 package amazigjj.simplygems.block;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 
 public class BlockOre extends BlockBasic {
 
-    protected Item toDrop;
-    protected int metaDrop = 0;
     protected int minDropAmount;
     protected int maxDropAmount;
+    protected List<ItemDropped> itemDrops = new ArrayList<>();
 
     public BlockOre(String name, Material material){
-        this(name, material, null, 1, 1);
+        this(name, material, 1, 1);
     }
 
-    public BlockOre(String name, Material material, Item toDrop){
-        this(name, material, toDrop, 1, 1);
+    public BlockOre(String name, Material material, int dropAmount){
+        this(name, material, dropAmount, dropAmount);
     }
 
-    public BlockOre(String name, Material material, Item toDrop, int dropAmount){
-        this(name, material, toDrop, dropAmount, dropAmount);
-    }
-
-    public BlockOre(String name, Material material, Item toDrop, int minDropAmount, int maxDropAmount){
+    public BlockOre(String name, Material material, int minDropAmount, int maxDropAmount){
         super(name,material);
-        this.toDrop = toDrop;
         this.minDropAmount = minDropAmount;
         this.maxDropAmount = maxDropAmount;
     }
 
-    public BlockOre setMetaDrop(int metaDrop){
-        this.metaDrop = metaDrop;
+    public BlockOre addItemDrop(Item item, int meta) {
+        this.itemDrops.add(new ItemDropped(item, meta));
         return this;
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune){
-        return toDrop==null?Item.getItemFromBlock(this):toDrop;
-    }
-
-    @Override
     public int quantityDropped(Random random){
-        if(this.minDropAmount>this.maxDropAmount) {
-            int i = this.minDropAmount;
-            this.minDropAmount=this.maxDropAmount;
-            this.maxDropAmount=i;
-        }
         return this.minDropAmount + random.nextInt(this.maxDropAmount - this.minDropAmount + 1);
     }
 
@@ -74,7 +64,30 @@ public class BlockOre extends BlockBasic {
     }
 
     @Override
-    public int damageDropped(IBlockState state){
-        return metaDrop;
+    public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+        Random rand = world instanceof World ? ((World)world).rand : RANDOM;
+
+        int count = quantityDropped(state, fortune, rand);
+        if(this.itemDrops.size()>0){
+            for (int i = 0; i < count; i++) {
+                int drop = rand.nextInt(this.itemDrops.size());
+                drops.add(new ItemStack(this.itemDrops.get(drop).dropItem, 1, this.itemDrops.get(drop).dropMeta));
+            }
+            return;
+        }
+        drops.add(new ItemStack(Item.getItemFromBlock(this), count, 0));
+
+    }
+
+}
+
+class ItemDropped{
+
+    public Item dropItem;
+    public int dropMeta;
+
+    public ItemDropped(Item item, int meta){
+        this.dropItem = item;
+        this.dropMeta = meta;
     }
 }
