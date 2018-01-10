@@ -94,6 +94,8 @@ public class GemConfig {
         public final Wopal wopal = new Wopal();
         @Config.Comment("Black Opal Gem Configuration")
         public final Bopal bopal = new Bopal();
+        @Config.Comment("Hornblende Gem Configuration")
+        public final Hornblende hornblende = new Hornblende();
 
 
         public static class Cinnabar {
@@ -565,6 +567,18 @@ public class GemConfig {
             public String[] tooltip = new String[]{};
         }
 
+        public static class Hornblende {
+
+            @Config.Comment("Ore Dictionary Values")
+            public String[] oreDict = new String[]{"gemCinnabar"};
+
+            @Config.Comment("Max Stack Size")
+            public int stackSize = 64;
+
+            @Config.Comment("Tooltip")
+            public String[] tooltip = new String[]{};
+        }
+
     }
 
 
@@ -621,6 +635,7 @@ public class GemConfig {
         azurite.setOreDict(GemConfig.gems.azurite.oreDict).setStackSize(GemConfig.gems.azurite.stackSize).setTooltip(GemConfig.gems.azurite.tooltip);
         bopal.setOreDict(GemConfig.gems.bopal.oreDict).setStackSize(GemConfig.gems.bopal.stackSize).setTooltip(GemConfig.gems.bopal.tooltip);
         wopal.setOreDict(GemConfig.gems.wopal.oreDict).setStackSize(GemConfig.gems.wopal.stackSize).setTooltip(GemConfig.gems.wopal.tooltip);
+        hornblende.setOreDict(GemConfig.gems.hornblende.oreDict).setStackSize(GemConfig.gems.hornblende.stackSize).setTooltip(GemConfig.gems.hornblende.tooltip);
     }
 
 }

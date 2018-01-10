@@ -76,6 +76,7 @@ public class SimplyGems {
     public static SubItemBase azurite = new SubItemBase("azurite").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase wopal = new SubItemBase("wopal").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
     public static SubItemBase bopal = new SubItemBase("bopal").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
+    public static SubItemBase hornblende = new SubItemBase("hornblende").setCreativeTab(GemsCreativeTab.creativeTab).setItem(gem);
 
     public static Item gems = new ItemBase("gems", gem);
     //public static ItemBase gems = new ItemBase("gems", "cinnabar", "goshenite", "jade", "morganite", "phosphophyllite", "redberyl", "rutile", "rutile2", "bort", "benitoite", "euclase", "neptunite", "yellowdiamond", "ruby", "zircon1", "zircon2", "zircon3", "zircon4", "obsidian", "amethyst", "alexandrite", "antarcticite", "padparadscha", "cairngorm", "ghostquartz", "watermelontourmaline", "sphene", "hemimorphite", "peridot", "chrysoberyl", "bluezoisite", "lrbopal", "wopal", "bopal", "unakite", "reddiamond", "azurite", "greendiamond", "hornblende");
