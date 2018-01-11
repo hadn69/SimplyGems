@@ -54,7 +54,7 @@ public class ModBlocks {
         oreZircons = new BlockOre("orezircons", Material.ROCK, 1, 3).addItemDrop(SimplyGems.gems, SimplyGems.zircon1.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.zircon2.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.zircon3.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.zircon4.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         oreZircons.setHarvestLevel("pickaxe", 1);
 
-        oreQuartzes = new BlockOre("oreQuartzes", Material.ROCK, 1, 7).addItemDrop(SimplyGems.gems, SimplyGems.amethyst.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.ghostquartz.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.cairngorm.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.rutile.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.rutile2.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
+        oreQuartzes = new BlockOre("oreQuartzes", Material.ROCK, 1, 7).addItemDrop(SimplyGems.gems, SimplyGems.amethyst.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.ghostquartz.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.cairngorm.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.rutile.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.rutile2.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.antarcticite.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         oreQuartzes.setHarvestLevel("pickaxe", 1);
 
         oreTopaz = new BlockOre("oretopaz", Material.ROCK, 1, 3).addItemDrop(SimplyGems.gems, SimplyGems.topaz.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
