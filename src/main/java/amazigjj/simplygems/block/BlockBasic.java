@@ -10,6 +10,6 @@ public class BlockBasic extends Block {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-
+        ModBlocks.blocks.add(this);
     }
 }

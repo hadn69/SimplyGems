@@ -28,7 +28,7 @@ public class SimplyGems {
 
     public static final String MOD_ID = "simplygems";
     public static final String NAME = "Simply Gems";
-    public static final String VERSION = "1.0.3";
+    public static final String VERSION = "1.1.1";
 
     @SidedProxy(serverSide = "amazigjj.simplygems.proxy.ServerProxy", clientSide = "amazigjj.simplygems.proxy.ClientProxy")
     public static CommonProxy proxy;
