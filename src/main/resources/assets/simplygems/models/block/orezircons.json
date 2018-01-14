@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "simplygems:blocks/orediamonds"
+    "all": "simplygems:blocks/orezircons"
   }
 }

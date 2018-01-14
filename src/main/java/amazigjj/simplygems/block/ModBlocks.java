@@ -43,6 +43,7 @@ public class ModBlocks {
     static Block oreBenitoite;
     static Block oreNeptunite;
     static Block oreObsidian;
+    static Block oreRuby;
 
     public static void init() {
         orePhos = new BlockOre("orephosphophyllite", Material.ROCK, 1, 2 ).addItemDrop(SimplyGems.gems, SimplyGems.phosphophyllite.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
@@ -63,7 +64,7 @@ public class ModBlocks {
         oreUnakite = new BlockOre("oreunakite", Material.ROCK, 1, 3).addItemDrop(SimplyGems.gems, SimplyGems.unakite.getMetadata()).setHardness(3f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         oreUnakite.setHarvestLevel("pickaxe", 1);
 
-        oreSapphires = new BlockOre("oresapphire", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.sapphire.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.padparadscha.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
+        oreSapphires = new BlockOre("oresapphires", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.sapphire.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.padparadscha.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         oreSapphires.setHarvestLevel("pickaxe", 1);
 
         oreWatermelonTourmaline = new BlockOre("orewatermelontourmaline", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.watermelontourmaline.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
@@ -84,7 +85,7 @@ public class ModBlocks {
         oreHornblende = new BlockOre("orehornblende", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.hornblende.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         oreHornblende.setHarvestLevel("pickaxe", 1);
 
-        oreDiamond = new BlockOre("oreDiamond", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.greendiamond.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.reddiamond.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.yellowdiamond.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
+        oreDiamond = new BlockOre("orediamond", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.greendiamond.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.reddiamond.getMetadata()).addItemDrop(SimplyGems.gems, SimplyGems.yellowdiamond.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         oreDiamond.setHarvestLevel("pickaxe", 1);
 
         oreAlexandrite = new BlockOre("orealexandrite", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.alexandrite.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
@@ -110,6 +111,9 @@ public class ModBlocks {
 
         oreObsidian = new BlockOre("oreobsidian", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.obsidian.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
         oreObsidian.setHarvestLevel("pickaxe", 1);
+
+        oreRuby = new BlockOre("oreruby", Material.ROCK, 1, 2).addItemDrop(SimplyGems.gems, SimplyGems.ruby.getMetadata()).setHardness(2f).setResistance(5f).setCreativeTab(GemsCreativeTab.creativeTab);
+        oreRuby.setHarvestLevel("pickaxe", 1);
     }
 
     @SubscribeEvent
