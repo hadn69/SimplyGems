@@ -92,9 +92,9 @@ public class ItemBase extends Item {
     }
 
     public void registerOreDict(){
-        for(SubItemBase subItem : this.subItems){
-            for(int i = 0; i<subItem.getOreDict().size(); i++){
-                OreDictionary.registerOre(subItem.getOreDict().get(i), new ItemStack(this, 1, i));
+        for(int i = 0; i<this.subItems.size(); i++){
+            for(String oreDict : this.subItems.get(i).getOreDict()){
+                OreDictionary.registerOre(oreDict, new ItemStack(this, 1, i));
             }
         }
     }
